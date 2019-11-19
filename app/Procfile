@@ -1,0 +1,2 @@
+hitapp-a: jruby app.rb
+hitapp-b: jruby app.rb

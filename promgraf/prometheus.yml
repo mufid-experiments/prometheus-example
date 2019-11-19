@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+- job_name: 'hitapp1'
+  scheme: http
+  metrics_path: '/prometheus'
+  static_configs:
+    - targets:
+      - '192.168.46.49:8080'
+- job_name: 'hitapp2'
+  scheme: http
+  metrics_path: '/prometheus'
+  static_configs:
+    - targets:
+      - '192.168.46.49:8081'
